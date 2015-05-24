@@ -30,8 +30,8 @@ CREATE TABLE Pessoas (
   INDEX Pessoas_FKIndex1(Agenda_Tipo),
   FOREIGN KEY(Agenda_Tipo)
     REFERENCES Agenda(Tipo)
-      ON DELETE NO ACTION
-      ON UPDATE NO ACTION
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
 
 CREATE TABLE EntradaValores (
@@ -45,8 +45,8 @@ CREATE TABLE EntradaValores (
   INDEX EntradaValores_FKIndex1(Pessoas_idPessoas),
   FOREIGN KEY(Pessoas_idPessoas)
     REFERENCES Pessoas(idPessoas)
-      ON DELETE NO ACTION
-      ON UPDATE NO ACTION
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
 
 CREATE TABLE Membros (
@@ -59,8 +59,8 @@ CREATE TABLE Membros (
   INDEX Membros_FKIndex1(Pessoas_idPessoas),
   FOREIGN KEY(Pessoas_idPessoas)
     REFERENCES Pessoas(idPessoas)
-      ON DELETE NO ACTION
-      ON UPDATE NO ACTION
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
 
 CREATE TABLE SaidaValores (
@@ -74,8 +74,8 @@ CREATE TABLE SaidaValores (
   INDEX SaidaValores_FKIndex1(Pessoas_idPessoas),
   FOREIGN KEY(Pessoas_idPessoas)
     REFERENCES Pessoas(idPessoas)
-      ON DELETE NO ACTION
-      ON UPDATE NO ACTION
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
 
 CREATE TABLE Usuarios (
@@ -88,8 +88,7 @@ CREATE TABLE Usuarios (
   INDEX Usuarios_FKIndex1(Pessoas_idPessoas),
   FOREIGN KEY(Pessoas_idPessoas)
     REFERENCES Pessoas(idPessoas)
-      ON DELETE NO ACTION
-      ON UPDATE NO ACTION
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
 );
-
 

@@ -59,9 +59,9 @@
                         <li><a href="#" class="consultaraniversariantes">Consultar Aniversariantes</a></li>
                     </ul>
                 </li>
-                <li><a href="Ajuda.aspx">Ajuda</a></li>
-                <li><a href="Sobre.aspx">Sobre</a></li>
-                <li><a href="Configuracao.aspx">Configuração</a></li>
+                <li><a href="Ajuda.aspx" class="menuAjuda">Ajuda</a></li>
+                <li><a href="Sobre.aspx" class="menuSobre">Sobre</a></li>
+                <li><a href="Configuracao.aspx" class="configurações">Configuração</a></li>
                 <li><a href="#">Logout</a></li>
 
             </ul>
