@@ -4,6 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="ConteudoAdmin">
+        <h3>Sistema We Thrust Managment</h3>
         <br />Sistema desenvolvido pelos colaboradores:
         <ul>
             <li>Fabiana Barbosa Pacheco</li>
