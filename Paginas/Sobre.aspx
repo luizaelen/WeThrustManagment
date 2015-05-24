@@ -3,11 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="ConteudoSobre">
+    <div id="ConteudoAdmin">
         <h3>Sistema We Thrust Managment</h3>
 
-        <br />
-        O We Thrust Management consiste em um sistema que tem o objetivo de automatizar processos de
+        <br />O We Thrust Management consiste em um sistema que tem o objetivo de automatizar processos de
 gerenciamento de Instituições Religiosas. 
         <br />
         O usuário poderá ter acesso em qualquer plataforma conectada à internet.
@@ -21,5 +20,13 @@ gerenciamento de Instituições Religiosas.
             <li>Relatórios financeiros;</li>
             <li>Calendário de atividades gerais.</li>
         </ul>
+
+
+        <br />Licença We Thrust Management: Versão Teste
+        <br />Data versão: Maio 2014
+        <br />Expira em : --
+        <br />Edição: Profissional
+        <br />Por favor envie-nos o seu feedback para: wethrustmanagment@suporte.com.br 
+        <br /><br />Copyright © 2015 WE THRUST MANAGMENT. Todos Direitos Reservados.
     </div>
 </asp:Content>
