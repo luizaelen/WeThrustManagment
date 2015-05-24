@@ -1,0 +1,45 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageInicial.master.vb" Inherits="Paginas_MasterPageInicial" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Bootstrap 3 Fixed Width Example</title>
+    <asp:ContentPlaceHolder id="head" runat="server">      
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="menu" runat="server">
+        <!-- MENU COMEÇA -->
+  <div class="navbar navbar-default">
+  <div class="container">
+    <a class="navbar-brand" href="Inicial.aspx">We Trust Management</a>
+    <ul class="nav navbar-nav">
+      <li><a href="Inicial.aspx">Home</a></li><!-- Botões do menu -->
+      <li><a href="Funcionalidades.aspx">Funcionalidades</a></li>
+      <li><a href="Contato.aspx">Contato</a></li>
+      <li><a href="AreaCliente.aspx">Área do Cliente</a></li>
+    </ul>
+  </div>
+</div>
+       <!-- MENU TERMINA -->
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"><!-- Parte que  se arruma em outra pagina (conteudo)-->
+        
+        </asp:ContentPlaceHolder><!-- termina aqui -->
+    </div>
+    </form>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta charset="utf-8"/>
+		
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/styles.css" rel="stylesheet">
+</body>
+</html>

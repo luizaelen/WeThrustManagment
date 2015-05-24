@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs" Inherits="Paginas_MasterPageAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Area Administrativa</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/StyleSheetMenuadmin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="navbar navbar-default" />
+
+    <img src="../img/Logopagadmin.png" />
+
+    <div class="container">
+
+        <div>
+
+            <ul id="menu">
+                <li><a href="#">Usuario</a>
+                <ul>
+                    <li><a href="#" class="alterar cadastro">Alterar Cadastro</a></li>
+                    <li><a href="#" class="consultas">Consultas</a></li>
+                    <li><a href="#" class="cadastrar">Cadastrar</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Membros</a>
+                    <ul>
+                        <li><a href="#" class="cadastrar">Cadastrar</a></li>
+                        <li><a href="#" class="editar">Editar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Financeiro</a>
+                    <ul>
+                        <li><a href="#" class="registrarrentradas">Registrar Entradas</a></li>
+                        <li><a href="#" class="registrarsaidas">Registrar Saídas</a></li>
+                        <li><a href="#" class="editarlancamento">Editar Lançamentos</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Agenda</a>
+                    <ul>
+                        <li><a href="#" class="cadastraratividade">Cadastrar Atividade</a></li>
+                        <li><a href="#" class="editaratividades">Editar Atividade</a></li>
+                        <li><a href="#" class="compartilhar">Compartilhar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Consultas</a>
+                    <ul>
+                        <li><a href="#" class="consultarmembros">Consultar Membros</a></li>
+                        <li><a href="#" class="consultarcontribuicoes">Consultar contribuições</a></li>
+                        <li><a href="#" class="consultaragendadeatividades">Agenda de atividades</a></li>
+                        <li><a href="#" class="consultaraniversariantes">Consultar Aniversariantes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Configuração</a></li>
+                <li><a href="#">Logout</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <form id="form2" runat="server">
+        <div>       
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
