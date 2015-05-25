@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <link href="../css/style.css" rel="stylesheet" />
+   
     <div id="ConteudoAdmin" class="cont">
 
 
@@ -34,7 +34,7 @@ gerenciamento de Instituições Religiosas. </p>
             <li><b>Calendário de atividades gerais.</b></li>
         </ul>
 
-        <br>
+        <br><img  src="../img/sistema.jpg" width="100">
         <br /><p class="texto">Licença We Thrust Management: Versão Teste</p>
         <br /><p class="texto">Licença We Thrust Management: Versão Teste</p>
         <br /><p class="texto">Data versão: Maio 2014</p>
@@ -46,7 +46,12 @@ gerenciamento de Instituições Religiosas. </p>
                 </span>
             </div>
        </div>
+
+    <div >
+
         
+
+    </div>
 
             
        
