@@ -10,9 +10,9 @@
 gerenciamento de Instituições Religiosas. 
         <br />
         O usuário poderá ter acesso em qualquer plataforma conectada à internet.
-        <br />
+        <br /
         O sistema oferece:
-        <ul>
+        <ul center >
             <li>Gestão de membros – Cadastro, Alteração e Desativação;</li>
             <li>Controle financeiro – Lançamento de entradas e saídas de valores;</li>
             <li>Relatório de membros;</li>
