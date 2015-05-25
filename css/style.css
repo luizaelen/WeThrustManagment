@@ -2890,3 +2890,15 @@ td.beauty-hover {
  
 .menu ul li:last-child a { border: none; }
 }
+
+
+
+.cont {
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.texto {
+    margin-bottom: 10px;
+}

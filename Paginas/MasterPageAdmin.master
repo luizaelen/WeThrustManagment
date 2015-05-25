@@ -56,7 +56,7 @@
                         <li><a href="#" class="consultarmembros">Consultar Membros</a></li>
                         <li><a href="#" class="consultarcontribuicoes">Consultar contribuições</a></li>
                         <li><a href="#" class="consultaragendadeatividades">Agenda de atividades</a></li>
-                        <li><a href="#" class="consultaraniversariantes">Consultar Aniversariantes</a></li>
+                        <li><a href="Aniversariantes.aspx" class="consultaraniversariantes">Consultar Aniversariantes</a></li>
                     </ul>
                 </li>
                 <li><a href="Ajuda.aspx" class="menuAjuda">Ajuda</a></li>
