@@ -16,6 +16,8 @@
         <div >
             <h3>Lista de Aniversáriantes</h3>
         </div>
+        <asp:Button ID="Button1" runat="server" Text="Imprimir" />
+        <br />
         <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="779px" AllowPaging="True">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
