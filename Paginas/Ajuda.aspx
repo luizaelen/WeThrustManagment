@@ -8,28 +8,32 @@
 
 
 
-    <div id"ConteudoAdmin">
-          
 
-        <div id="ConteudoAdmin">
-         <span style="color:black;" >
-        <h3 >Sistema We Thrust Managment</h3>
-        <br /><h1 style="text-align:center;"Sistema desenvolvido pelos colaboradores:</h1>
-        <ul style="text-align:center;">
-            <li >Fabiana Barbosa Pacheco</li>
-            <li>Felipe Aristides Jonathan Guimarães</li>
-            <li>Isabel Medeiros Andrade</li>
-            <li>Juliana Barbosa e Santos Coca </li>
-            <li>Lucy Souza de Oliveira</li>
-            <li>Luiza Elen B. Almeida</li>
-            <li>Matheus Miranda Pisani Correa</li>
-        </ul>
-        <br />Para entrar em contato com os desenvolvedores, 
-        <br />enviar um email para:  mailto:wethrustmanagment@suporte.com.br
+
+
+    <div id="ConteudoAdmin" class="cont">
+
+        <span style="color: black;">
+
+            <p class="ajuda"><strong>Sistema We Thrust Managment </strong></p>
+
+
+            <p>Sistema desenvolvido pelos colaboradores:</p>
+            <ul>
+                <li><strong>Fabiana Barbosa Pacheco</strong></li>
+                <li><strong>Felipe Aristides Jonathan Guimarães</strong></li>
+                <li><strong>Isabel Medeiros Andrade</strong></li>
+                <li><strong>Juliana Barbosa e Santos Coca </strong></li>
+                <li><strong>Lucy Souza de Oliveira</strong></li>
+                <li><strong>Luiza Elen B. Almeida</strong></li>
+                <li><strong>Matheus Miranda Pisani Correa</strong></li>
+            </ul>
+            <br />
+            Para entrar em contato com os desenvolvedores, 
+        <br />
+            enviar um email para:  wethrustmanagment@suporte.com.br
+
+        </span>
     </div>
-
-        </div>
-
-
     
 </asp:Content>

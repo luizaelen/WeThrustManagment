@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WeThrustManagment", "E:\Luiza\FATEC\7º Semestre - DP\Script\Interdisciplinar\We Thrust\WeThrustManagment\", "{BEE313DE-F04D-41B2-BA7E-CEB81C70CA2C}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WeThrustManagment", ".", "{AB4A9563-0C9E-4926-8466-368B68C5217A}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/WeThrustManagment"
@@ -18,7 +18,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WeThrustManagment", "E:\Lui
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "6588"
+		VWDPort = "24693"
 	EndProjectSection
 EndProject
 Global
@@ -26,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BEE313DE-F04D-41B2-BA7E-CEB81C70CA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEE313DE-F04D-41B2-BA7E-CEB81C70CA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4A9563-0C9E-4926-8466-368B68C5217A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4A9563-0C9E-4926-8466-368B68C5217A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
