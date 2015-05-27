@@ -11,14 +11,14 @@
                 <td class="alinhar">
                     <asp:Label ID="Label1" runat="server" Text="Nome"></asp:Label><asp:Label ID="Label19" runat="server" Text="*" ForeColor="Red"></asp:Label></td>
                 <td>
-                    <asp:TextBox ID="txtNome" runat="server" Width="450px" CssClass="form-control" required title=""></asp:TextBox></td>
+                    <asp:TextBox ID="txtNome" runat="server" Width="450px" CssClass="form-control" required =""></asp:TextBox></td>
             </tr>
             <tr>
                 <td class="alinhar">
                     <asp:Label ID="Label2" runat="server" Text="Sexo"></asp:Label><asp:Label ID="Label20" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td class="auto-style2">
-                    <asp:DropDownList ID="DropSexo" CssClass="form-control" required title="" runat="server" Width="120px">
+                    <asp:DropDownList ID="DropSexo" CssClass="form-control" required ="" runat="server" Width="120px">
                         <asp:ListItem>Selecione</asp:ListItem>
                         <asp:ListItem>M</asp:ListItem>
                         <asp:ListItem>F</asp:ListItem>
@@ -30,7 +30,7 @@
                     <asp:Label ID="Label3" runat="server" Text="Data Nascimento"></asp:Label><asp:Label ID="Label21" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtData" CssClass="form-control" required title="" runat="server" Width="160px" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="txtData" CssClass="form-control" required ="" runat="server" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -55,7 +55,7 @@
                     <asp:Label ID="Label22" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtLogin" CssClass="form-control" required title="" Width="160px" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLogin" CssClass="form-control" required ="" Width="160px" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -64,7 +64,7 @@
                     <asp:Label ID="Label23" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtEmail" CssClass="form-control" required title="" Width="220px" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" CssClass="form-control" required ="" Width="220px" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -73,7 +73,7 @@
                     <asp:Label ID="Label24" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtConfEmail" CssClass="form-control" required title="" Width="220px" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtConfEmail" CssClass="form-control" required ="" Width="220px" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>

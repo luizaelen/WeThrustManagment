@@ -12,14 +12,14 @@
                 <td class="alinhar">
                     <asp:Label ID="Label1" runat="server" Text="Nome"></asp:Label><asp:Label ID="Label19" runat="server" Text="*" ForeColor="Red"></asp:Label></td>
                 <td>
-                    <asp:TextBox ID="txtNome" runat="server" Width="450px" CssClass="form-control" required title=""></asp:TextBox></td>
+                    <asp:TextBox ID="txtNome" runat="server" Width="450px" CssClass="form-control" required =""></asp:TextBox></td>
             </tr>
             <tr>
                 <td class="alinhar" colspan="1">
                     <asp:Label ID="Label3" runat="server" Text="Data Nascimento"></asp:Label><asp:Label ID="Label21" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtData" CssClass="form-control" required title="" runat="server" Width="160px" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="txtData" CssClass="form-control" required ="" runat="server" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@
                     <asp:Label ID="Label23" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtEmail" CssClass="form-control" required title="" Width="220px" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" CssClass="form-control" required ="" Width="220px" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -53,7 +53,7 @@
                     <asp:Label ID="Label24" runat="server" Text="*" ForeColor="Red"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtConfEmail" CssClass="form-control" required title="" Width="220px" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtConfEmail" CssClass="form-control" required ="" Width="220px" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
