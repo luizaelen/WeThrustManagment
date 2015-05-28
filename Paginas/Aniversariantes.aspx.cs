@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,23 +8,22 @@ using System.Web.UI.WebControls;
 
 public partial class Paginas_Aniversariantes : System.Web.UI.Page
 {
-
+   
     Random rnd = new Random();
-
+    
     /**
      * Ao carregar a pagina, é feita uma chamada para o metodo Carrega GridView;
      * para carregar os dados na tabela.
      **/
     protected void Page_Load(object sender, EventArgs e)
     {
-
-        if (!IsPostBack)
+        
+       if (!IsPostBack)
         {
-            CarregaGV();//chamada do metodo
-            GridView2.PageIndex = 0;
-
+           CarregaGV();//chamada do metodo
+            
         }
-
+        
     }
 
     /**
@@ -44,29 +42,27 @@ public partial class Paginas_Aniversariantes : System.Web.UI.Page
         dt.Columns.Add("Status", System.Type.GetType("System.String"));
 
 
-
-
         //adiciono os valores na tabela, cada linha corresponde a um dado diferente de cada pessoa
-        dt.Rows.Add(new String[] { Convert.ToString(1), "Maria Joana Silva", Convert.ToString(new DateTime(1985, 5, 21).ToString("dd/MM/yyyy")), new DateTime(1985, 5, 21).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(2), "Bento XVI", Convert.ToString(new DateTime(2000, 12, 5).ToString("dd/MM/yyyy")), new DateTime(2000, 12, 5).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(3), "João Alves", Convert.ToString(new DateTime(2001, 11, 8).ToString("dd/MM/yyyy")), new DateTime(2001, 11, 8).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(4), "Carlos Eduardo", Convert.ToString(new DateTime(1999, 6, 15).ToString("dd/MM/yyyy")), new DateTime(1999, 6, 15).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(5), "Rosana Alves", Convert.ToString(new DateTime(2004, 9, 23).ToString("dd/MM/yyyy")), new DateTime(2004, 9, 23).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(6), "Chuck Norris", Convert.ToString(new DateTime(1987, 3, 16).ToString("dd/MM/yyyy")), new DateTime(1987, 3, 16).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(7), "Sylvester Stalone", Convert.ToString(new DateTime(1998, 3, 18).ToString("dd/MM/yyyy")), new DateTime(1998, 3, 18).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(8), "Miguel Miguelito", Convert.ToString(new DateTime(2006, 10, 18).ToString("dd/MM/yyyy")), new DateTime(2006, 10, 18).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(9), "Jânio Quadros", Convert.ToString(new DateTime(1984, 9, 17).ToString("dd/MM/yyyy")), new DateTime(1984, 9, 17).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(10), "Pedro Alvares Cabral", Convert.ToString(new DateTime(2007, 8, 11).ToString("dd/MM/yyyy")), new DateTime(2007, 8, 11).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(11), "Pedro Bial", Convert.ToString(new DateTime(1995, 7, 9).ToString("dd/MM/yyyy")), new DateTime(1995, 7, 9).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(12), "Luiza Elen b. Almeida", Convert.ToString(new DateTime(2005, 4, 20).ToString("dd/MM/yyyy")), new DateTime(2005, 4, 20).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(13), "Jonas Rodrigues Alves", Convert.ToString(new DateTime(1999, 1, 18).ToString("dd/MM/yyyy")), new DateTime(1999, 1, 18).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(14), "Jovial Nunes de Siqueira", Convert.ToString(new DateTime(2002, 8, 14).ToString("dd/MM/yyyy")), new DateTime(2002, 8, 14).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(15), "José Da Silva Sauro ", Convert.ToString(new DateTime(2003, 2, 13).ToString("dd/MM/yyyy")), new DateTime(2003, 2, 13).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(16), "Carlos Serafim", Convert.ToString(new DateTime(1996, 5, 19).ToString("dd/MM/yyyy")), new DateTime(1996, 5, 19).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(17), "Bruce Lee", Convert.ToString(new DateTime(2008, 10, 2).ToString("dd/MM/yyyy")), new DateTime(2008, 10, 2).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(18), "Indiana Jones", Convert.ToString(new DateTime(1986, 4, 11).ToString("dd/MM/yyyy")), new DateTime(1986, 4, 11).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(19), "Jhon Lennon", Convert.ToString(new DateTime(1985, 6, 29).ToString("dd/MM/yyyy")), new DateTime(1985, 6, 29).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
-        dt.Rows.Add(new String[] { Convert.ToString(20), "Michael Jackson", Convert.ToString(new DateTime(2001, 11, 5).ToString("dd/MM/yyyy")), new DateTime(2001, 11, 5).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(1), "Maria Joana Silva", Convert.ToString(new DateTime(1985, 5, 21)), new DateTime(1985, 5, 21).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(2), "Bento XVI", Convert.ToString(new DateTime(2000, 12, 5)), new DateTime(2000, 12, 5).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(3), "João Alves", Convert.ToString(new DateTime(2001, 11, 8)), new DateTime(2001, 11, 8).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(4), "Carlos Eduardo", Convert.ToString(new DateTime(1999, 6, 15)), new DateTime(1999, 6, 15).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(5), "Rosana Alves", Convert.ToString(new DateTime(2004, 9, 23)), new DateTime(2004, 9, 23).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(6), "Chuck Norris", Convert.ToString(new DateTime(1987, 3, 16)), new DateTime(1987, 3, 16).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(7), "Sylvester Stalone", Convert.ToString(new DateTime(1998, 3, 18)), new DateTime(1998, 3, 18).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(8), "Miguel Miguelito", Convert.ToString(new DateTime(2006, 10, 18)), new DateTime(2006, 10, 18).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(9), "Jânio Quadros", Convert.ToString(new DateTime(1984, 9, 17)), new DateTime(1984, 9, 17).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(10), "Pedro Alvares Cabral", Convert.ToString(new DateTime(2007, 8, 11)), new DateTime(2007, 8, 11).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(11), "Pedro Bial", Convert.ToString(new DateTime(1995, 7, 9)), new DateTime(1995, 7, 9).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(12), "Luiza Elen b. Almeida", Convert.ToString(new DateTime(2005, 4, 20)), new DateTime(2005, 4, 20).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(13), "Jonas Rodrigues Alves", Convert.ToString(new DateTime(1999, 1, 18)), new DateTime(1999, 1, 18).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(14), "Jovial Nunes de Siqueira", Convert.ToString(new DateTime(2002, 8, 14)), new DateTime(2002, 8, 14).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(15), "José Da Silva Sauro ", Convert.ToString(new DateTime(2003, 2, 13)), new DateTime(2003, 2, 13).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(16), "Carlos Serafim", Convert.ToString(new DateTime(1996, 5, 19)), new DateTime(1996, 5, 19).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(17), "Bruce Lee", Convert.ToString(new DateTime(2008, 10, 2)), new DateTime(2008, 10, 2).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(18), "Indiana Jones", Convert.ToString(new DateTime(1986, 4, 11)), new DateTime(1986, 4, 11).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(19), "Jhon Lennon", Convert.ToString(new DateTime(1985, 6, 29)), new DateTime(1985, 6, 29).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
+        dt.Rows.Add(new String[] { Convert.ToString(20), "Michael Jackson", Convert.ToString(new DateTime(2001, 11, 5)), new DateTime(2001, 11, 5).Month.ToString(), Convert.ToString(rnd.Next(1, 5)) });
 
         //retorna a lista de dados 
         return dt;
@@ -74,42 +70,24 @@ public partial class Paginas_Aniversariantes : System.Web.UI.Page
 
     protected void CarregaGV()
     {
-
-
-
         //seta no Grid os valores retornados do metodo PopulaGrid().
         GridView2.DataSource = PopulaGrid();
-
         GridView2.DataBind();
     }
 
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
-
+        
     }
 
     protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
     {
-
-    }
-    public override void VerifyRenderingInServerForm(Control control)
-    {
-        /* Verifies that the control is rendered */
+        
     }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Response.Clear();
-        StringWriter sw = new StringWriter();
-        HtmlTextWriter htw = new HtmlTextWriter(sw);
-
-        GridView2.RenderControl(htw);
-        Response.ContentType = "application/pdf";
-        Response.AddHeader("content-disposition", "attachment; filename=Aniversariantes.pdf");
-        Response.Write(sw.ToString());
-
-        Response.End();
-
+        ShowStatus("Preparando relatório, aguarde.");
 
     }
 
@@ -154,36 +132,10 @@ public partial class Paginas_Aniversariantes : System.Web.UI.Page
             dv.RowFilter = query; // query example = "id = 10"
         }
         //senao seta todos os valores novamente.
-        if (dv.Count < 2)
-        {
-            lblResultado.Text = "Foi econtrado " + Convert.ToString(dv.Count) + " resultado.";
-        }
-        else
-        {
-            lblResultado.Text = "Foram econtrados " + Convert.ToString(dv.Count) + " resultados.";
-        }
-
         GridView2.DataSource = dv;
         GridView2.DataBind();
 
         query = "";
     }
-
-    protected void GridView2_PageIndexChanging(object sender, GridViewPageEventArgs e)
-    {
-        GridView2.PageIndex = e.NewPageIndex;
-        CarregaGV();
-    }
-    protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
-    protected void Button3_Click(object sender, EventArgs e)
-    {
-        DropDownList1.SelectedIndex = 0;
-        DropDownList2.SelectedIndex = 0;
-        lblResultado.Text = "";
-        CarregaGV();
-
-    }
+    
 }
