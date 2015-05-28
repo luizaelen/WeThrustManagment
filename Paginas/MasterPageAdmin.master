@@ -18,13 +18,7 @@
 
     <div class="navbar navbar-default" />
 
-    <img src="../img/Logopagadmin.png" />
-
-    <div class="container">
-
-        <div>
-
-            <ul id="menu">
+    &nbsp;<img src="../img/Logopagadmin.png" /><ul id="menu">
                 <li><a href="#">Usuario</a>
                 <ul>
                     <li><a href="editUser.aspx" class="alterar cadastro">Alterar Cadastro</a></li>
@@ -69,6 +63,10 @@
                 <li><a href="#">Logout</a></li>
 
             </ul>
+
+    <div class="container">
+
+        <div>
 
         </div>
 
